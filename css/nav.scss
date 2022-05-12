@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+nav {
+    background-color: $grayishBlueShade;
+    color: #333;
+    padding: 1em 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.5em;
+        padding: 0 1em;
+        &:hover {
+            color: $lightPurpleShade;
+        }
+    }
+    button {
+        background: $lightBlueShade;
+    }
+    
+}
+
+.category-list {
+    position: absolute;
+    display: none;
+    top: 65px;
+    right: 20px;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 1em 0;
+    button {
+        background-color: #fff;
+        color: #333;
+        &:hover {
+            background-color: $lightBlueShade;
+            color: #fff;
+        }
+    }
+}

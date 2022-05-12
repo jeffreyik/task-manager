@@ -1,0 +1,62 @@
+@import './nav';
+@import './variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $darkBlueShade;
+    font-family: monospace;
+    color: #fff;
+}
+
+main {
+    padding: 2em 0;
+}
+main.container {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    border: 0;
+    background: $lightBlueShade;
+    color: #fff;
+    padding: 1em;
+    cursor: pointer;  
+}
+
+#new-btn .fas.fa-file{
+    padding: 0 .5em;
+}
+
+// Utilities 
+.todo-card {
+    background-color: #fff;
+    color: #333;
+    width: fit-content;
+    border: 1px solid #000;
+    display: flex;
+    outline: none;
+    h2 {
+        padding: 1em;
+        outline: none;
+    }
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
